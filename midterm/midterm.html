@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000"
+http-equiv="X-UA-Compatible">
+
+<META http-equiv="X-UA-Compatible" content="IE=11.0000">          <TITLE>My
+map</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><LINK href="leaflet.css"
+rel="stylesheet">
+<SCRIPT src="leaflet.js"></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 11.00.9600.18427"></HEAD>
+<BODY>
+<DIV id="map" style="height: 650px;"></DIV>
+<SCRIPT type="text/javascript">
+
+    var map = L.map('map').setView([41.980606, -87.717792], 17);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoiYy1icm93bjkiLCJhIjoiY2l0NG92d3ljMDAwMTd5cXhpYWdrZXc5OSJ9.4j5JtZRtTmFgBU4mVtPSyg'
+
+      }).addTo(map);
+
+      var marker1 = L.marker([41.98041,-87.7175]).addTo(map);
+      var marker2 = L.marker([41.981,-87.7191]).addTo(map);
+      var marker3 = L.marker([41.9802,-87.7191]).addTo(map);
+      var marker4 = L.marker([41.9811,-87.7179]).addTo(map);
+      var marker5 = L.marker([41.9814,-87.7187]).addTo(map);
+      var marker6 = L.marker([41.98175,-87.71912]).addTo(map);
+      var marker7 = L.marker([41.9806,-87.7203]).addTo(map);
+      var marker8 = L.marker([41.9813,-87.71914]).addTo(map);
+      var marker9 = L.marker([41.98158,-87.71911]).addTo(map);
+      var marker10 = L.marker([41.9822,-87.71886]).addTo(map);
+
+      marker1.bindPopup("<b>GES Department Office</b><br />Third Floor, BBH346A, x5640<br />A Good place to get questions answered").openPopup();
+      marker2.bindPopup("<b>Cafeteria, Dining Services</b><br />Lower Level, SU009, x5335");
+      marker3.bindPopup("<b>Learning Support Center</b><br />Fourth Floor, Lib454, x4568<br />Tutoring and writing assistance available");
+      marker4.bindPopup("<b>Computer Center</b><br />B Building,B107, x4390<br />Most open access computers on campus");
+      marker5.bindPopup("<b>Financial Aid Office</b><br>Ground Floor, D200, x5000");
+      marker6.bindPopup("<b>Health Services</b><br />Lower Level, E051, x5800<br />Free Flu Shots!");
+      marker7.bindPopup("<b>Public Safety/ Parking Structure</b><br /> Ground Level, PF104, x4100<br />Parking office is next door");
+      marker8.bindPopup("<b>Information Center/Box Office</b><br />village Square, SU105, x4636<br />Get your ID card and Event tickets, here");
+      marker9.bindPopup("<b>Follett Book Store</b><br />Ground Floor, E104, x4990<br />Text books and copy center");
+      marker10.bindPopup("<b>Academic Advising Center</b><br />Lower Level, LWH024, x5470");
+
+    </SCRIPT>
+      </BODY></HTML>

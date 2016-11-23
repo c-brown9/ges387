@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="leaflet.css" />
+        <script src="leaflet.js"></script>
+
+    </head>
+
+    <body>
+
+      <div style="background-color:white;color:black;padding:20px;">
+         <h2>Lab 2 Question 4</h2>
+        <p>Places to which I have traveled.</p>
+      </div>
+
+        <div id="map" style="height: 650px"></div>
+
+        <script type="text/javascript">
+          var map = L.map('map').setView([37.51, -118.26],3);
+
+          L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.png', {
+
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+
+
+               maxZoom: 16,
+               minZoom: 0
+            }).addTo(map);
+
+var marker1 = L.marker([19.40700833,-155.28335277]).addTo(map);
+var marker2 = L.marker([52.1879,-117.25793888]).addTo(map);
+var marker3 = L.marker([36.05807, -112.0046111]).addTo(map);
+var marker4 = L.marker([37.186233611, -86.10005278]).addTo(map);
+
+marker1.bindPopup("Mt. Kilauea Volocano, HI");
+marker2.bindPopup("Athabasca Glacier, Alberta, CN");
+marker3.bindPopup("Grand Canyon, AZ");
+marker4.bindPopup("Mammoth Cave, KY");
+
+        </script>
+   </body>
+</html>
