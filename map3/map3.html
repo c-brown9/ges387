@@ -82,7 +82,7 @@
           attribution: 'Pie chart made with <a href="https://d3js.org/">D3</a>, Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">Mapbox</a>',
           maxZoom: 11,
           minZoom: 5,
-          id: 'mapbox.light',
+          id: 'mapbox.dark',
           accessToken: 'pk.eyJ1IjoiYy1icm93bjkiLCJhIjoiY2l0NG92d3ljMDAwMTd5cXhpYWdrZXc5OSJ9.4j5JtZRtTmFgBU4mVtPSyg'
         }).addTo(map);
 
@@ -154,7 +154,7 @@ function highlightFeature(e) {
 
          }).addTo(map);
 
-         var legend = L.control({position: 'bottomright'}); // Try the other three corners if you like.
+         var legend = L.control({position: 'topright'}); // Try the other three corners if you like.
 
          legend.onAdd = function (map) {
              var div = L.DomUtil.create('div', 'legend'),
@@ -212,7 +212,7 @@ function makePie(props) {
       });
   }
 
-var info = L.control({position: 'bottomleft'}); // The other three corners: topright, bottomleft, bottomright
+var info = L.control({position: 'topleft'}); // The other three corners: topright, bottomleft, bottomright
 
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'legend');

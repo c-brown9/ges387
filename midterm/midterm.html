@@ -1,19 +1,23 @@
 ﻿<!DOCTYPE HTML>
-<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000"
+<HTML><HEAD>
+  <!-- <META content="IE=11.0000"
 http-equiv="X-UA-Compatible">
 
-<META http-equiv="X-UA-Compatible" content="IE=11.0000">          <TITLE>My
+<META http-equiv="X-UA-Compatible" content="IE=11.0000"> -->
+  <TITLE>My
 map</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=utf-8"><LINK href="leaflet.css"
-rel="stylesheet">
+<!-- <META http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+<LINK href="leaflet.css"  rel="stylesheet">
 <SCRIPT src="leaflet.js"></SCRIPT>
 
-<META name="GENERATOR" content="MSHTML 11.00.9600.18427"></HEAD>
+<!-- <META name="GENERATOR" content="MSHTML 11.00.9600.18427"> -->
+</HEAD>
 <BODY>
-<DIV id="map" style="height: 650px;"></DIV>
+<DIV id="map" style="height: 700px;"></DIV>
 <SCRIPT type="text/javascript">
 
-    var map = L.map('map').setView([41.980606, -87.717792], 17);
+    // var map = L.map('map').setView([41.980606, -87.717792], 17);
+    var map = L.map('map').setView([41.9806, -87.7178], 17);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
