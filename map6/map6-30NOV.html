@@ -131,7 +131,7 @@
         // here we use the HTML5 range type to create a simple slider
         function createSliderUI(timestamps) {
 
-            var sliderControl = L.control({ position: 'topleft'} ); // position of the slider
+            var sliderControl = L.control({ position: 'bottomleft'} ); // position of the slider
 
             sliderControl.onAdd = function(map) {
 
@@ -160,7 +160,7 @@
         // add labels for the temporal slider, no need to change anything for this lab
         function createTemporalLegend(startTimestamp) {
 
-            var temporalLegend = L.control({ position: 'topleft' }); // same position as the slider
+            var temporalLegend = L.control({ position: 'bottomleft' }); // same position as the slider
 
             temporalLegend.onAdd = function(map) {
 
